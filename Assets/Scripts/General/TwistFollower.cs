@@ -1,6 +1,7 @@
 using System;
 using Sirenix.OdinInspector;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class TwistFollower : MonoBehaviour
 {
@@ -47,12 +48,22 @@ public class TwistFollower : MonoBehaviour
             currentAngle = Mathf.Clamp(currentAngle, minAngle, maxAngle);
         }
 
-        transform.position = new Vector3(arcCenter.position.x + Mathf.Cos(Rads(currentAngle)) * horizontalRadius,
-            arcCenter.position.y + Mathf.Sin(Rads(currentAngle)) * verticalRadius);
+        transform.localPosition = PointAtAngle(currentAngle);
         if (rotateWithTwist)
         {
-            transform.rotation = Quaternion.Euler(0, 0, currentAngle);
+            transform.localRotation = Quaternion.Euler(0, 0, currentAngle);
         }
+    }
+
+    public Vector3 PointAtAngle(float angle)
+    {
+        return new Vector3(arcCenter.position.x + Mathf.Cos(Rads(angle)) * horizontalRadius,
+            arcCenter.position.y + Mathf.Sin(Rads(angle)) * verticalRadius);
+    }
+
+    public Vector3 RandomPointOnArc()
+    {
+        return PointAtAngle(Random.Range(0f, 360f));
     }
 
     private void OnValidate()

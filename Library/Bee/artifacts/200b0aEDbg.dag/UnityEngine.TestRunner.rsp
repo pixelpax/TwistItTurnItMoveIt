@@ -112,6 +112,8 @@
 -define:ENABLE_TILEMAP
 -define:ENABLE_TIMELINE
 -define:ENABLE_LEGACY_INPUT_MANAGER
+-define:ODIN_INSPECTOR
+-define:ODIN_INSPECTOR_3
 -define:CSHARP_7_OR_LATER
 -define:CSHARP_7_3_OR_NEWER
 -r:"/Applications/Unity/Hub/Editor/2021.2.5f1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Common.dll"

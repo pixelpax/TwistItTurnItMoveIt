@@ -112,6 +112,8 @@
 -define:ENABLE_TILEMAP
 -define:ENABLE_TIMELINE
 -define:ENABLE_LEGACY_INPUT_MANAGER
+-define:ODIN_INSPECTOR
+-define:ODIN_INSPECTOR_3
 -define:PACKAGE_PHYSICS
 -define:PACKAGE_PHYSICS2D
 -define:PACKAGE_ANIMATION
@@ -325,6 +327,11 @@
 -r:"/Applications/Unity/Hub/Editor/2021.2.5f1/Unity.app/Contents/UnityReferenceAssemblies/unity-4.8-api/System.Runtime.Serialization.dll"
 -r:"/Applications/Unity/Hub/Editor/2021.2.5f1/Unity.app/Contents/UnityReferenceAssemblies/unity-4.8-api/System.Xml.dll"
 -r:"/Applications/Unity/Hub/Editor/2021.2.5f1/Unity.app/Contents/UnityReferenceAssemblies/unity-4.8-api/System.Xml.Linq.dll"
+-r:"/Users/gabriel/TwistTest/Library/PackageCache/com.unity.burst@1.6.0/Unity.Burst.CodeGen/Unity.Burst.Cecil.dll"
+-r:"/Users/gabriel/TwistTest/Library/PackageCache/com.unity.burst@1.6.0/Unity.Burst.CodeGen/Unity.Burst.Cecil.Mdb.dll"
+-r:"/Users/gabriel/TwistTest/Library/PackageCache/com.unity.burst@1.6.0/Unity.Burst.CodeGen/Unity.Burst.Cecil.Pdb.dll"
+-r:"/Users/gabriel/TwistTest/Library/PackageCache/com.unity.burst@1.6.0/Unity.Burst.CodeGen/Unity.Burst.Cecil.Rocks.dll"
+-r:"/Users/gabriel/TwistTest/Library/PackageCache/com.unity.burst@1.6.0/Unity.Burst.Unsafe.dll"
 -r:"/Users/gabriel/TwistTest/Library/PackageCache/com.unity.collab-proxy@1.15.4/Lib/Editor/PlasticSCM/log4netPlastic.dll"
 -r:"/Users/gabriel/TwistTest/Library/PackageCache/com.unity.collab-proxy@1.15.4/Lib/Editor/PlasticSCM/Unity.Plastic.Antlr3.Runtime.dll"
 -r:"/Users/gabriel/TwistTest/Library/PackageCache/com.unity.collab-proxy@1.15.4/Lib/Editor/PlasticSCM/Unity.Plastic.Newtonsoft.Json.dll"
